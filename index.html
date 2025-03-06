@@ -1,1 +1,61 @@
-hola mundo
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">MiLandingPage</div>
+            <ul>
+                <li><a href="#section1">Inicio</a></li>
+                <li><a href="#section2">Servicios</a></li>
+                <li><a href="#section3">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="section1" class="hero">
+        <div class="hero-content">
+            <h1>Bienvenido a Nuestra Página</h1>
+            <p style="color: black;">Descubre nuestros servicios y productos exclusivos</p>
+            <button id="cta-btn">Contáctanos</button>
+        </div>
+    </section>
+
+    <section id="section2" class="services">
+        <h2>Servicios</h2>
+        <div class="service-item">
+            <h3>Servicio 1</h3>
+            <p>Descripción del servicio 1.</p>
+        </div>
+        <div class="service-item">
+            <h3>Servicio 2</h3>
+            <p>Descripción del servicio 2.</p>
+        </div>
+        <div class="service-item">
+            <h3>Servicio 3</h3>
+            <p>Descripción del servicio 3.</p>
+        </div>
+    </section>
+
+    <section id="section3" class="contact">
+        <h2>Contacto</h2>
+        <form action="send_email.php" method="POST">
+            <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+            <input type="email" id="email" name="email" placeholder="Tu correo" required>
+            <textarea id="message" name="message" placeholder="Tu mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 MiLandingPage. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="scritp.js"></script>
+</body>
+</html>
